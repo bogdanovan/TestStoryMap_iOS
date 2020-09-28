@@ -753,7 +753,7 @@
             <objects>
                 <viewController id="Ypi-ET-qSG" customClass="UserDetailInfoVC" customModule="TestStoryMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-1T-jrE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="ZRK-uU-BuY">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
@@ -937,9 +937,9 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Смотреть на карте" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-Zg-idR">
-                                                                <rect key="frame" x="41" y="62" width="101.5" height="36"/>
+                                                                <rect key="frame" x="41.5" y="62" width="101" height="36"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="101.5" id="bSf-z1-4YE"/>
+                                                                    <constraint firstAttribute="width" constant="101" id="bSf-z1-4YE"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
@@ -950,10 +950,11 @@
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="aUa-Zg-idR" secondAttribute="bottom" constant="11" id="7db-sm-dB5"/>
                                                             <constraint firstItem="aUa-Zg-idR" firstAttribute="top" secondItem="0yH-Wt-YIa" secondAttribute="bottom" constant="17" id="Gdj-V5-vVv"/>
+                                                            <constraint firstItem="aUa-Zg-idR" firstAttribute="centerX" secondItem="mPK-2r-0WB" secondAttribute="centerX" id="Jrt-cG-Bs6"/>
                                                             <constraint firstItem="0yH-Wt-YIa" firstAttribute="centerX" secondItem="mPK-2r-0WB" secondAttribute="centerX" id="KLo-vb-kKJ"/>
                                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aUa-Zg-idR" secondAttribute="trailing" priority="750" constant="41" id="PuJ-a0-bLd"/>
                                                             <constraint firstItem="0yH-Wt-YIa" firstAttribute="top" secondItem="mPK-2r-0WB" secondAttribute="top" constant="10" id="nKn-RD-0DK"/>
-                                                            <constraint firstItem="aUa-Zg-idR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mPK-2r-0WB" secondAttribute="leading" constant="41" id="uWN-Pz-e7k"/>
+                                                            <constraint firstItem="aUa-Zg-idR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mPK-2r-0WB" secondAttribute="leading" priority="750" constant="41" id="uWN-Pz-e7k"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>

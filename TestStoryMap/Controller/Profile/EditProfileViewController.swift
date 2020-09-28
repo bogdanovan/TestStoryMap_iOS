@@ -114,11 +114,9 @@ class EditProfileViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
-        if textField.text == "" || finalImage == nil {
+        if textField.text == nil || textField.text!.isEmpty || finalImage == nil {
             showSavingWarning()
-        }
-        
-        if let image = avatarImageView.image, let userName = textField.text {
+        } else if let image = avatarImageView.image, let userName = textField.text {
             if finalImageDefault {
                 guard let imageName = finalImage else { return }
                 writeDataToRealm(imageName: imageName, userName: userName)
@@ -127,10 +125,8 @@ class EditProfileViewController: UIViewController {
                 DataBaseHelper.shareInstance.saveImage(data: image.pngData()!)
                 writeDataToRealm(userName: userName)
             }
+            navigationController?.popViewController(animated: true)
         }
-        
-        navigationController?.popViewController(animated: true)
-        
     }
     
     func writeDataToRealm(imageName: String = "", userName: String) {

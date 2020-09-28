@@ -9,8 +9,6 @@ import UIKit
 
 class UsersVC: UIViewController {
     
-    
-    
     @IBOutlet weak var userTableView: UITableView!
     
     @IBOutlet weak var peopleLabel: UILabel!
